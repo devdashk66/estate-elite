@@ -13,7 +13,7 @@ interface LocationOption {
 interface PropertyTypeOption {
   id: number;
   name: string;
-  icon: JSX.Element;
+  icon: React.ReactElement;
 }
 
 const HeroSection = () => {
@@ -51,14 +51,6 @@ const HeroSection = () => {
       priceRange,
     });
   };
-
-  // const formatPrice = (price: number) => {
-  //   return price.toLocaleString("en-US", {
-  //     style: "currency",
-  //     currency: "USD",
-  //     maximumFractionDigits: 0,
-  //   });
-  // };
 
   return (
     <section className="relative h-screen w-full">
