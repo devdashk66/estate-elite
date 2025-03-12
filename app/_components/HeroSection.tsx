@@ -52,13 +52,13 @@ const HeroSection = () => {
     });
   };
 
-  const formatPrice = (price: number) => {
-    return price.toLocaleString("en-US", {
-      style: "currency",
-      currency: "USD",
-      maximumFractionDigits: 0,
-    });
-  };
+  // const formatPrice = (price: number) => {
+  //   return price.toLocaleString("en-US", {
+  //     style: "currency",
+  //     currency: "USD",
+  //     maximumFractionDigits: 0,
+  //   });
+  // };
 
   return (
     <section className="relative h-screen w-full">
