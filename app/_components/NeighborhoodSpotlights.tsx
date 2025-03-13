@@ -64,6 +64,7 @@ const NeighborhoodSpotlights = () => {
       description:
         "Nestled along the scenic waterfront, Riverside combines natural beauty with upscale amenities. Enjoy waterfront parks, marinas, and walking trails while still being just minutes from urban conveniences.",
       image: "/images/properties/property2.jpg",
+      avgPrice: 650000,
       propertyCount: 32,
       amenities: {
         restaurants: 75,

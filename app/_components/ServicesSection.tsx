@@ -18,7 +18,7 @@ interface Service {
   id: number;
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon: React.ReactElement;
   color: string;
 }
 
