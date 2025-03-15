@@ -108,7 +108,7 @@ const Header = () => {
             className="hidden md:block"
           >
             <Link
-              href="/account"
+              href="/login"
               className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
             >
               <FaUser className="mr-2" />
@@ -152,7 +152,7 @@ const Header = () => {
               </Link>
             ))}
             <Link
-              href="/account"
+              href="/login"
               className="flex items-center bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 mt-4"
               onClick={() => setIsMenuOpen(false)}
             >
