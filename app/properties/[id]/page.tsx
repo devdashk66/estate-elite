@@ -44,12 +44,14 @@ interface Property {
     phone: string;
     email: string;
   };
+  video?: string;
+  virtualTour?: string;
+  floorPlan?: string;
 }
 
 const PropertyPage = () => {
   const router = useRouter();
 
-  console.log(router);
   // This would normally be fetched from an API based on the ID
   // For now, using mock data
   const property: Property = {
