@@ -21,7 +21,7 @@ const property = {
   bedrooms: 5,
   bathrooms: 4,
   area: 3200,
-  image: "/placeholder.svg?height=600&width=1200",
+  image: "/images/properties/property1.jpg",
   featured: true,
   type: "Sale",
   propertyType: "Villa",
@@ -57,7 +57,7 @@ export default function PropertyDetails() {
   }).format(property.price);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 text-black">
       {/* Hero Section */}
       <div className="relative h-[50vh] md:h-[70vh] w-full">
         <Image
@@ -161,7 +161,7 @@ export default function PropertyDetails() {
             </motion.div>
 
             {/* Description */}
-            <motion.div className="mb-10" variants={fadeIn}>
+            <motion.div className="mb-10 text-black" variants={fadeIn}>
               <h2 className="text-2xl font-bold mb-4">Description</h2>
               <div className="bg-white p-6 rounded-xl shadow-sm">
                 <p className="text-muted-foreground leading-relaxed">
