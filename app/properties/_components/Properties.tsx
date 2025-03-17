@@ -332,6 +332,8 @@ const PropertiesPage = () => {
             src="/images/properties/properties-header.jpg"
             alt="Properties"
             fill
+            priority
+            sizes={720}
             style={{ objectFit: "cover" }}
             className="z-10 opacity-5"
           />
@@ -559,6 +561,8 @@ const PropertiesPage = () => {
                           src={property.image}
                           alt={property.title}
                           fill
+                          loading="lazy"
+                          sizes={720}
                           style={{ objectFit: "cover" }}
                           className="transition-transform duration-500 hover:scale-110"
                         />

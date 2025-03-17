@@ -1,7 +1,7 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { BiBuildingHouse } from "react-icons/bi";
 import {
   FaBath,
@@ -10,24 +10,6 @@ import {
   FaRulerCombined,
   FaTag,
 } from "react-icons/fa";
-
-// This would typically come from your API
-const property = {
-  id: "prop1",
-  title: "Modern Luxury Villa",
-  price: 1250000,
-  address: "123 Skyline Drive",
-  city: "Beverly Hills",
-  bedrooms: 5,
-  bathrooms: 4,
-  area: 3200,
-  image: "/images/properties/property1.jpg",
-  featured: true,
-  type: "Sale",
-  propertyType: "Villa",
-  description:
-    "Stunning modern villa with panoramic views, infinity pool, and smart home technology.",
-};
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -49,6 +31,27 @@ const staggerContainer = {
 };
 
 export default function PropertyDetails() {
+  const pathname = usePathname();
+  const path = pathname.replace("/properties/prop", "/properties/property");
+
+  // This would typically come from your API
+  const property = {
+    id: "prop1",
+    title: "Modern Luxury Villa",
+    price: 1250000,
+    address: "123 Skyline Drive",
+    city: "Beverly Hills",
+    bedrooms: 5,
+    bathrooms: 4,
+    area: 3200,
+    image: `/images${path}.jpg`,
+    featured: true,
+    type: "Sale",
+    propertyType: "Villa",
+    description:
+      "Stunning modern villa with panoramic views, infinity pool, and smart home technology.",
+  };
+
   // Format price with commas
   const formattedPrice = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -64,6 +67,7 @@ export default function PropertyDetails() {
           src={property.image || "/placeholder.svg"}
           alt={property.title}
           fill
+          sizes={1080}
           className="object-cover"
           priority
         />
