@@ -305,6 +305,8 @@ const AgentsPage = () => {
                     <Image
                       src={agent.photo}
                       alt={agent.name}
+                      sizes={720}
+                      priority
                       fill
                       style={{ objectFit: "cover" }}
                     />

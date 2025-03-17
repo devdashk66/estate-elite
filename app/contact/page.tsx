@@ -349,12 +349,12 @@ const ContactPage = () => {
                 {/* Google Map (placeholder) */}
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden h-64 relative">
                   <Image
-                    src="/images/map-placeholder.jpg"
+                    src="/images/map-placeholder.png"
                     alt="Office location map"
                     fill
                     style={{ objectFit: "cover" }}
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 ">
                     <p className="text-white text-center px-4">
                       Interactive map would be integrated here.
                       <br />
