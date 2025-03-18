@@ -59,6 +59,7 @@ const HeroSection = () => {
         <Image
           src="/images/hero-bg.jpg"
           alt="Luxury real estate"
+          sizes="1440px"
           fill
           style={{ objectFit: "cover" }}
           priority

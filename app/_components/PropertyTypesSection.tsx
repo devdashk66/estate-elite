@@ -145,6 +145,7 @@ const PropertyTypesSection: React.FC = () => {
                 <Image
                   src={type.image}
                   alt={type.name}
+                  sizes="720px"
                   fill
                   style={{ objectFit: "cover" }}
                   className="group-hover:scale-110 transition-transform duration-500"

@@ -187,6 +187,7 @@ const AgentProfiles = () => {
                 <Image
                   src={agent.image}
                   alt={agent.name}
+                  sizes="720px"
                   fill
                   style={{ objectFit: "cover" }}
                   className="transition-transform duration-500"

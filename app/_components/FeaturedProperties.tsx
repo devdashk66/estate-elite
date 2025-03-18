@@ -210,6 +210,7 @@ const FeaturedProperties = () => {
                   src={property.image}
                   alt={property.title}
                   fill
+                  sizes="720px"
                   style={{ objectFit: "cover" }}
                   className="transition-transform duration-500 hover:scale-110"
                 />

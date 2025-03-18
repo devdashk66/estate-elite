@@ -202,6 +202,7 @@ const NeighborhoodSpotlights = () => {
                   src={currentNeighborhood.image}
                   alt={currentNeighborhood.name}
                   fill
+                  sizes="1080px"
                   style={{ objectFit: "cover" }}
                   priority
                 />

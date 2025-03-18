@@ -118,6 +118,7 @@ const Testimonials = () => {
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
                     fill
+                    sizes="1080px"
                     style={{ objectFit: "cover" }}
                     className="h-full w-full"
                   />
@@ -153,6 +154,7 @@ const Testimonials = () => {
                     <Image
                       src={testimonials[currentIndex].image}
                       alt={testimonials[currentIndex].name}
+                      sizes="720px"
                       fill
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
