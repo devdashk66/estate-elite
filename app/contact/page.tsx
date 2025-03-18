@@ -352,6 +352,7 @@ const ContactPage = () => {
                     src="/images/map-placeholder.png"
                     alt="Office location map"
                     fill
+                    sizes="1080px"
                     style={{ objectFit: "cover" }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 ">

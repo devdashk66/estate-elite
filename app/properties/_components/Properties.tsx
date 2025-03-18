@@ -333,7 +333,7 @@ const PropertiesPage = () => {
             alt="Properties"
             fill
             priority
-            sizes={720}
+            sizes="720px"
             style={{ objectFit: "cover" }}
             className="z-10 opacity-5"
           />

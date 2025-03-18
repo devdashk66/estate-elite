@@ -538,6 +538,8 @@ const SearchSection: NextPage = () => {
                       src={property.image}
                       alt={property.title}
                       fill
+                      sizes="720px"
+                      priority
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
                     />

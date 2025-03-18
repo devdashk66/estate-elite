@@ -14,34 +14,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "EstateElite - Find Your Perfect Property",
+  metadataBase: new URL("https://estateelite.vercel.app"),
+  title: "EstateElite - Find Your Dream Home",
   description:
-    "Browse premium properties for sale and rent. Discover your dream home with ease.",
-  keywords: [
-    "real estate",
-    "buy property",
-    "rent property",
-    "dream home",
-    "property listings",
-  ],
-  authors: [
-    { name: "devdashk66", url: "https://www.linkedin.com/in/devdashk66/" },
-  ],
+    "Explore luxury real estate listings with EstateElite. Find your perfect home today.",
   openGraph: {
-    title: "EstateElite - Find Your Perfect Property",
+    title: "EstateElite - Find Your Dream Home",
     description:
-      "Browse premium properties for sale and rent. Discover your dream home with ease.",
-    url: "/images/og-image.webp",
+      "Explore luxury real estate listings with EstateElite. Find your perfect home today.",
+    url: "https://estateelite.vercel.app",
     siteName: "EstateElite",
     images: [
       {
         url: "/images/og-image.webp",
         width: 1200,
         height: 630,
+        alt: "EstateElite - Luxury Real Estate",
       },
     ],
-    locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EstateElite - Find Your Dream Home",
+    description:
+      "Explore luxury real estate listings with EstateElite. Find your perfect home today.",
+    images: ["/images/og-image.webp"],
   },
 };
 
