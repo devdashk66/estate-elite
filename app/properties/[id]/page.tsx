@@ -67,7 +67,7 @@ export default function PropertyDetails() {
           src={property.image || "/placeholder.svg"}
           alt={property.title}
           fill
-          sizes={1080}
+          sizes="1080px"
           className="object-cover"
           priority
         />
