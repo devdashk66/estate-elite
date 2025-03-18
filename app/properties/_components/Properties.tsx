@@ -562,7 +562,7 @@ const PropertiesPage = () => {
                           alt={property.title}
                           fill
                           loading="lazy"
-                          sizes={720}
+                          sizes="720px"
                           style={{ objectFit: "cover" }}
                           className="transition-transform duration-500 hover:scale-110"
                         />
